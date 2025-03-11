@@ -19,7 +19,7 @@ def agregar_usuario(nombre, correo):
         print(f"Error: El correo '{correo}' ya está registrado.")
 
 def obtener_usuario():
-    session.expire_all() #forzar actualizacion desde la Bae de Datos
+    session.expire_all() #forzar actualizacion desde la Base de Datos
     return session.query(Usuario).all()
 
 def buscar_usuario_correo(correo):
